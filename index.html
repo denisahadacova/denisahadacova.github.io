@@ -1,1 +1,255 @@
-Bacon, bacon, bacon
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENIM STYLE | Svět džínů</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #142c46;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #9ec7ed;
+        }
+
+        .hero {
+            min-height: 550px;
+            background:
+                linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1542272604-787c3835535d?w=1600')
+                center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #286090;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #173c5d;
+        }
+
+        .about {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #142c46;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .products {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #142c46;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: white;
+            width: 280px;
+            padding-bottom: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin: 18px 0 10px;
+        }
+
+        .product p {
+            color: #286090;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            background: #142c46;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #0b1b2c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 8px;
+                display: inline-block;
+            }
+
+            .hero h2 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DENIM STYLE</h1>
+
+        <nav>
+            <a href="#domu">Domů</a>
+            <a href="#onas">O nás</a>
+            <a href="#kolekce">Kolekce</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="domu">
+        <div>
+            <h2>DENIM NEVER DIES</h2>
+            <p>Objev svůj styl. Objev svět džínů.</p>
+            <a href="#kolekce" class="button">PROHLÉDNOUT KOLEKCI</a>
+        </div>
+    </section>
+
+    <section class="about" id="onas">
+        <h2>O SVĚTĚ DŽÍNŮ</h2>
+        <p>
+            Džíny jsou symbolem stylu, pohodlí a svobody.
+            Ať už máš rád klasický, moderní nebo extravagantní
+            vzhled, u nás najdeš inspiraci pro každý outfit.
+            Džínovina nikdy nevyjde z módy!
+        </p>
+    </section>
+
+    <section class="products" id="kolekce">
+        <h2>NAŠE KOLEKCE</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600"
+                alt="Modré džíny">
+                <h3>CLASSIC JEANS</h3>
+                <p>999 Kč</p>
+                <a href="#kontakt" class="button">Zjistit více</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=600"
+                alt="Moderní džínovina">
+                <h3>MODERN DENIM</h3>
+                <p>1 199 Kč</p>
+                <a href="#kontakt" class="button">Zjistit více</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?w=600"
+                alt="Džínový outfit">
+                <h3>STREET STYLE</h3>
+                <p>1 399 Kč</p>
+                <a href="#kontakt" class="button">Zjistit více</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+        <h2>KONTAKTUJ NÁS</h2>
+        <p>Máš otázky? Napiš nám!</p>
+        <p>Email: info@denimstyle.cz</p>
+    </section>
+
+    <footer>
+        <p>© 2026 DENIM STYLE | Všechna práva vyhrazena</p>
+    </footer>
+
+</body>
+</html>
